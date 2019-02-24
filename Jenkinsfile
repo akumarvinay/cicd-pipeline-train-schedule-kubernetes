@@ -52,7 +52,7 @@ pipeline {
                     )
                 //implement Kubernetes deployment here
             }
-            }
+            
         }
     }
 }
