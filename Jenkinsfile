@@ -43,8 +43,6 @@ pipeline {
                 branch 'master'
             }
             steps {
-                docker.withRegistry('https://registry.hub.docker.com', 'Dockerhub-Cred') 
-                {
                 input 'Deploy to Production?'
                 milestone(1)
                 kubernetesDeploy(
